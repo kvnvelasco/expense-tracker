@@ -1,0 +1,340 @@
+.container {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.container-main {
+  display: grid;
+  grid-template-columns:  1fr 250px 350px 1fr;
+  grid-template-areas: 
+  ". header header ."
+  ". leftcolumn rightcolumn ."
+  ". lefttotal righttotal ."
+  ". navexp navexp ."
+  ". navtrans navtrans .";
+}
+
+.container-expense {
+  display: grid;
+  grid-template-columns:  1fr 200px 400px 1fr;
+  grid-template-areas: 
+  ". header header ."
+  ". leftexp rightexp ."
+  ". navexpense navexpense ."
+  ". navtransexpense navtransexpense .";
+}
+
+.container-trans {
+  display: grid;
+  grid-template-columns:  1fr 500px 1fr;
+}
+
+.container-dash {
+  display: grid;
+  grid-template-columns:  1fr 300px 150px 1fr;
+  grid-template-areas: 
+  ". header header ."
+  ". food foodr ."
+  ". rent rentr ."
+  ". util utilr ."
+  ". travel travelr ."
+  ". ent entr ."
+  ". navdash navdash .";
+}
+
+.header {
+  grid-area: header;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.header-trans {
+  grid-column: 2 / 3;
+  justify-self: center;
+  margin-top: 50px;
+}
+
+.food {
+  margin: 0;
+  padding: 20px 0 20px 30px;
+  grid-area: food;
+  background-color: #092327;
+  color: whitesmoke;
+}
+
+.foodresult {
+  margin: 0;
+  padding: 20px 0;
+  grid-area: foodr;
+  background-color: #092327;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.rent {
+  margin: 0;
+  padding: 20px 0 20px 30px;
+  grid-area: rent;
+  background-color: #0B5351;
+  color: whitesmoke;
+}
+
+.rentresult {
+  margin: 0;
+  padding: 20px 0;
+  grid-area: rentr;
+  background-color: #0B5351;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.util {
+  margin: 0;
+  padding: 20px 0 20px 30px;
+  grid-area: util;
+  background-color: #00A9A5;
+  color: whitesmoke;
+}
+
+.utilresult {
+  margin: 0;
+  padding: 20px 0;
+  grid-area: utilr;
+  background-color: #00A9A5;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.travel {
+  margin: 0;
+  padding: 20px 0 20px 30px;
+  grid-area: travel;
+  background-color: #4E8098;
+  color: whitesmoke;
+}
+
+.travelresult {
+  margin: 0;
+  padding: 20px 0;
+  grid-area: travelr;
+  background-color: #4E8098;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.ent {
+  margin: 0;
+  padding: 20px 0 20px 30px;
+  grid-area: ent;
+  background-color: rgb(10, 119, 197);
+  color: whitesmoke;
+}
+
+.entresult {
+  margin: 0;
+  padding: 20px 0;
+  grid-area: entr;
+  background-color: rgb(10, 119, 197);
+  color: whitesmoke;
+  text-align: center;
+}
+
+.table {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns:  100%;
+  border: 3px solid grey;
+}
+
+.row {
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 60% 40%;
+} 
+
+.col-1 {
+  grid-column: 1 / 2;
+  padding-left: 50px;
+
+}
+
+.col-1 h2 {
+  margin: 10px 0 0 0;
+}
+
+.col-1 h4 {
+  margin: 0 0 10px 30px;
+  color: gray;
+}
+
+.col-2 {
+  grid-column: 2 / 3;
+  text-align: center;
+
+}
+
+.left-column {
+  grid-area: leftcolumn;
+  padding-left: 50px;
+  border-top: 3px solid lightseagreen;
+  border-left: 3px solid lightseagreen;
+  color: darkslategrey;
+}
+
+.left-total {
+  grid-area: lefttotal;
+  padding-left: 50px;
+  border-top-style: dashed;
+  border-left: 3px solid lightseagreen;
+  border-bottom: 3px solid lightseagreen;
+  color: darkslategrey;
+}
+
+.left-expense {
+  grid-area: leftexp;
+  color: darkslategrey;
+  padding-left: 30px; 
+}
+
+.left-expense h2 {
+  margin: 26px;
+}
+
+.right-column {
+  grid-area: rightcolumn;
+  border-top: 3px solid lightseagreen;
+  color: darkslategrey;
+  background-color: lightseagreen;
+  text-align: center;
+}
+
+.right-total {
+  grid-area: righttotal;
+  text-align: center;
+  border-top-style: dashed;
+  color: darkslategrey;
+  background-color: lightseagreen;
+}
+
+.right-expense {
+  grid-area: rightexp;
+  /*display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "inputDate"
+    "inputAmount"
+    "inputCategory addCateg";*/
+}
+
+.inputDate {
+  grid-area: inputDate;
+}
+
+.inputAmount {
+  grid-area: inputAmount;
+}
+
+.inputCategory {
+  grid-area: inputCategory;
+}
+
+.addCateg {
+  grid-area: addCateg;
+}
+
+.nav-exp {
+  grid-area: navexp;
+  padding-top: 30px;
+  justify-self: center;
+}
+
+.nav-expense {
+  grid-area: navexpense;
+  justify-self: center;
+}
+
+.nav-trans {
+  grid-area: navtrans;  
+  margin-top: 50px;
+}
+
+.nav-dash {
+  grid-area: navdash;
+  margin-top: 50px;
+}
+
+.nav-trans-2 {
+  grid-column: 2 / 3;
+  margin-top: 50px;
+}
+
+.nav-trans-expense {
+  grid-area: navtransexpense;
+  margin-top: 50px;
+}
+
+button {
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: white;
+  border-color: lightskyblue;
+  color: darkslategrey;
+}
+
+button.nav-button{
+  margin: 0;
+  border-radius: 0;
+  width: 100%;
+  border: none;
+  color: rgb(48, 46, 46);
+}
+
+
+input {
+  width: 80%;  
+  font-size: 20px;
+  text-align: right;
+  height: 35px;
+  padding: 0;  
+  border: 2px solid lightseagreen;
+  border-radius: 5px;
+}
+
+.button-expense {
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-color: red;
+  background-color: red;  
+  color: white;
+}
+
+.button-income {
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-color: green;
+  background-color: green;  
+  color: white;
+}
+
+#addExp {
+  border-color: red;
+  background-color: red;  
+  color: white;
+}
+
+#addInc {
+  border-color: green;
+  background-color: green;  
+  color: white;  
+}
