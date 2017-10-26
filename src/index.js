@@ -9,19 +9,16 @@ import Transaction from './transaction';
 import Dashboard from './dashboard';
 
 class ExpenseApp extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      page: 'main',
-      date: '',
-      amount: 0,
-      category: '',
-      totalIncome: 0,
-      totalExpense: 0,
-      transaction: [],
-      income: [],
-      alltrans: []  
-    }
+  state = {
+    page: 'main',
+    date: '',
+    amount: 0,
+    category: '',
+    totalIncome: 0,
+    totalExpense: 0,
+    transaction: [],
+    income: [],
+    alltrans: []
   }
 
   addTransaction = () => {
