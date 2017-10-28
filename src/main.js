@@ -9,6 +9,8 @@ export default class Main extends Component {
       curDate: curMonth.toDateString('us-en', options)
     }
   }
+
+  
   
   render() {
     return (
